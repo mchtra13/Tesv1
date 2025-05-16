@@ -45,8 +45,8 @@ let typing;
 
 function typeNextLine() {
   if (index >= lines.length) {
-    loveSong.currentTime = 0;
-    loveSong.play();
+    lovesong.currentTime = 0;
+    lovesong.play();
     return;
   }
 
@@ -65,8 +65,8 @@ function typeNextLine() {
 
 function startHack() {
   clearTimeout(typing);
-  loveSong.pause();
-  loveSong.currentTime = 0;
+  lovesong.pause();
+  lovesong.currentTime = 0;
   terminal.innerHTML = "";
   index = 0;
   charIndex = 0;
@@ -74,7 +74,7 @@ function startHack() {
 }
 
 window.addEventListener("load", () => {
-  terminal.innerText = "Click here to initiate secure love hack...";
+  terminal.innerText = "Click here to initiate secure hack...";
 });
 
 terminal.addEventListener("click", startHack);
